@@ -14,7 +14,7 @@
       <fieldset>
         <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" display="block" required /></label>
         <label id="email-label" for="email">E-Mail: <input id="email" type="email" placeholder="Enter your e-mail" display="block" required /></label>
-        <label id="number-label" for="number">Phone:<input type="number" minlength="10" maxlength="10" placeholder="Enter your contact no." required> </label>
+        <label id="number-label" for="number">Phone:<input type="number" id="number" minlength="10" maxlength="10" min="1111111111" max="9999999999" placeholder="Enter your contact no." required> </label>
         <label id="dropdown-label" for="dropdown">Which events did you take part in? <select id="dropdown">
           <option value="">Select one</option>
           <option value="1">Tech Scribble</option>
@@ -27,14 +27,23 @@
         </label>
         <label id="radio-label" for="name">
           How would you rate the event on a scale from 1 to 5: 
-          😩 <input type="radio" id="name" value="1" required>
-          😟 <input type="radio" id="name" value="2" required>
-          😐 <input type="radio" id="name" value="3" required>
-          😊  <input type="radio" id="name" value="4" required>
-          😄<input type="radio" id="name" value="5" required>
+          😩 <input type="radio" name="radio" value="1" required>
+          😟 <input type="radio" name="radio" value="2" required>
+          😐 <input type="radio" name="radio" value="3" required>
+          😊  <input type="radio" name="radio" value="4" required>
+          😄<input type="radio" name="radio" value="5" required>
         </label>
-        <label id="feedback-label" for="feedback">Any additional feedback on how we can improve next year?
-          <input type="textarea" placeholder="Enter your comments here" id="feedback" rows="80" cols="200" maxlength="1000" required />
+        What type of events did you like more of?
+        <label id="checkbox-label">
+          
+          <input type="checkbox" value="1"> Technical Events
+        <input type="checkbox"value="2"> Non-Technical Events
+        </label>
+        Any additional feedback on how we can improve next year?
+  
+        <label id="feedback-label" for="feedback">
+          <textarea placeholder="Enter your comments here" id="feedback" maxlength="1000" rows="6" cols="20" required autocorrect />
+          </textarea>
         </label>
          <label id="submit-label" for="submit" >
           <input id="submit" type="submit" value="Submit">
