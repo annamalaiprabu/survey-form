@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Texus 2023 Survey Form</title>
+    <h1 id="title">Texus 2023</h1>
+    <h2 id="title"> Survey Form</h2>
+    <p id="description"> Thank you for taking the time to help us out :) </p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" display="block" required /></label>
+        <label id="email-label" for="email">E-Mail: <input id="email" type="email" placeholder="Enter your e-mail" display="block" required /></label>
+        <label id="number-label" for="number">Phone:<input type="number" minlength="10" maxlength="10" placeholder="Enter your contact no." required> </label>
+        <label id="dropdown-label" for="dropdown">Which events did you take part in? <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Tech Scribble</option>
+          <option value="2">Robo Rash</option>
+          <option value="3">Dark Fusion</option>
+          <option value="4">Game Goblins</option>
+          <option value="5">ENIGMA</option>
+          <option value="6">Klingon Coding</option>
+          </select> 
+        </label>
+        <label id="radio-label" for="name">
+          How would you rate the event on a scale from 1 to 5: 
+          😩 <input type="radio" id="name" value="1" required>
+          😟 <input type="radio" id="name" value="2" required>
+          😐 <input type="radio" id="name" value="3" required>
+          😊  <input type="radio" id="name" value="4" required>
+          😄<input type="radio" id="name" value="5" required>
+        </label>
+        <label id="feedback-label" for="feedback">Any additional feedback on how we can improve next year?
+          <input type="textarea" placeholder="Enter your comments here" id="feedback" rows="80" cols="200" maxlength="1000" required />
+        </label>
+         <label id="submit-label" for="submit" >
+          <input id="submit" type="submit" value="Submit">
+        </label>
+      </fieldset>
+    </form>
+  </body>
+  <footer>
+    <p>
+      © Texus 2023, SRMIST Ramapuram
+    </p>
+  </footer>
+</html>
